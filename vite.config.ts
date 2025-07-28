@@ -13,14 +13,11 @@ export default defineConfig((config) => {
     define: {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     },
-    server: {
-      host: '0.0.0.0',
-      port: 5173,
-      allowedHosts: [
-        'criadordigital-boltdiy.wh9dnc.easypanel.host',
-        'localhost'
-      ]
-    },
+  server: {
+  host: '0.0.0.0',
+  port: 5173,
+  allowedHosts: true  // Permite qualquer host
+},
     build: {
       target: 'esnext',
     },
